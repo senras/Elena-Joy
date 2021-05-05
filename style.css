@@ -74,6 +74,7 @@ a {
 
 body {
   font-family: "Rhul", sans-serif;
+  animation: opening 1s ease-in-out;
 }
 
 h1 {
@@ -152,8 +153,41 @@ nav {
   bottom: 0;
   left: -20%;
   z-index: -1;
+  transform: translateY(10%) rotateX(-90deg);
+  animation: plant-entrance 1.5s ease-in-out forwards,
+    plant-shake 2.5s infinite ease alternate-reverse 2s;
+  transform-origin: bottom;
 }
 
 .plant2 {
   left: 40%;
+}
+
+/* Animations */
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes plant-entrance {
+  from {
+    transform: translateY(10%) rotateX(-90deg);
+  }
+  to {
+    transform: translateY(0%) rotateX(0deg);
+  }
+}
+
+@keyframes plant-shake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
 }
