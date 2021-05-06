@@ -8,26 +8,26 @@
       name="description"
       content="Professional Photographer available for weddings and special events."
     />
-    <link rel="icon" href="" />
     <link rel="stylesheet" href="style.css" />
     <title>Elena Joy | Protographer</title>
   </head>
   <body>
-    <header class="main-head">
-      <nav>
-        <h1 id="logo">Elena Joy</h1>
-        <input type="checkbox" class="menu-check" />
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
+    <header class="nav-bar">
+      <div class="main-head">
+        <nav>
+          <h1 id="logo">Elena Joy</h1>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="burger">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -40,7 +40,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt
             illo dolorum autem? Dolor illo impedit amet quo, praesentium sit?
           </p>
-          <a href="gallery">Gallery</a>
+          <a href="#gallery">Gallery</a>
         </div>
         <div class="hero-images flex">
           <img
@@ -52,7 +52,7 @@
           <img src="/img/plant2.png" alt="" class="plant2 plant" />
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-image">
           <h5>MINIMAL</h5>
           <img src="/img/about-image.png" alt="portrait-picture" />
@@ -88,7 +88,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <header class="gallery-head">
           <h2>Quality Photography</h2>
           <p>My favourites pictures from all time</p>
@@ -106,6 +106,41 @@
         />
         <img class="gallery4" src="/img/gallery-4.jpg" alt="lady-jacket" />
       </section>
+      <section class="contact" id="contact">
+        <div class="form-wrapper flex">
+          <h2>
+            Get in <br />
+            <span>touch.</span>
+          </h2>
+          <form action="">
+            <label for="email">Your Email:</label>
+            <input id="email" type="email" required />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <img src="/img/contact-image.jpg" alt="elena-joy" />
+      </section>
     </main>
+    <footer>
+      <h4>Elena Joy &copy; 2021</h4>
+      <ul>
+        <li>
+          <a href=""
+            ><img src="/img/youtube-symbol 1.svg" alt="youtube-social-media"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="/img/instagram 1.svg" alt="instagram-social-media"
+          /></a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="/img/twitter 1.svg" alt="twitter-social-media"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="/app.js"></script>
   </body>
 </html>
